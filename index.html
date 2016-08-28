@@ -1,0 +1,375 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <title>Matt O'Tousa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/4f61b27129.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css"
+	<link rel="stylesheet" type="text/css" href="bootstrap-social.css">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<script src='mysite.js'></script>
+
+</head>
+<body>
+	<div class='container'>
+		<div class='row'>
+			<div id='navbar'>
+				<span><a href=#>Matt O'Tousa</a></span>
+				<ul>
+					<li><a href='#code'>Code</a></li>
+					<li><a href='#visual'>Visual</a></li>
+					<li><a href='#audio'>Audio</a></li>
+					<li><a href='#video'>Video</a></li>
+					<li><a href='#about'>About</a></li>
+					<li><a href='#blog'>Blog</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!--<div class='content-holder'>
+	<div class='content'>-->
+			<div class='container-fluid'>
+				<div class='row white-row'>
+					<div class='col-md-12'>
+						<div class='heightbrick'></div>
+						<h1 class='center'>Hi, I'm Matt O'Tousa</h1>
+						<h4 class='center'>artist, web developer, audio engineer</h4>
+					</div>
+				</div>
+				<div class='row'>
+					<img src="walkdog-crop.jpg" alt="Let's go exploring!" class="full-width-img">
+				</div>
+				<div class='row white-row'>
+					<div class='col-md-12'>
+						<h4 class='center'>I like 
+							<span id='interest1'>dogs</span>, 
+							<span id='interest2'>art</span>, 
+							<span id='interest3'>music</span>, and 
+							<span id='interest4'>quantum physics</span>
+						</h4>
+						<h4 class='center'>but mostly I like to make all sorts of</h4>
+					</div>
+				</div>
+					<div class='row inverted-row'>
+						<h1 class='heading'>THINGS</h1>
+					</div>
+					<div class='row inverted-row'>
+					<div class='circles-row'>
+							<div class='col-sm-3 col-xs-6'>
+								<a href='#code'><div class='circle'><h1>Code</h1></div></a>
+							</div>
+							<div class='col-sm-3 col-xs-6'>
+								<a href='#visual'><div class='circle'><h1>Visual</h1></div></a>
+							</div>
+							<div class='col-sm-3 col-xs-6'>
+								<a href='#audio'><div class='circle'><h1>Audio</h1></div></a>
+							</div>
+							<div class='col-sm-3 col-xs-6'>
+								<a href='#video'><div class='circle'><h1>Video</h1></div></a>
+							</div>
+						</div>
+					</div>
+					<div class='row inverted-row' style='height: 80px'>
+						<div style='height: 30px'></div>
+						<h6 class='center'>(check 'em out)</h6>
+					</div>
+				</div>
+				<div class='row white-row'>
+					<a name='code'></a>
+					<h1 class='subheading'>CODE</h1>
+				</div>
+
+				<div class='row inverted-row'>
+					<div class='row-container'>
+						<div class='col-sm-6'>
+							<div class='textbox textbox-link' data-toggle='modal' data-target='#wasp-modal'>
+								<h1 class='center'>WASP</h1>
+								<img src="wasp-ss.png" alt="Web Audio Signal Processor" class="full-width-img">
+								<h4>Web Audio Signal Processor</h4>
+								<!--<h4><a>More Info</a> | <a href='wasp/webAudioEnvironment.html'>Demo</a></h4>-->
+							</div>
+						<!--THE MODAL IT OPENS FOR WASP-->
+						<div class='modal fade' id='wasp-modal' role='dialog'>
+							<div class='modal-dialog'>
+								<!-- MODAL CONTENT -->
+								<div class='modal-content'>
+									<div class='modal-header'>
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h1 class='center'>WASP - Web Audio Signal Processor</h1>
+									</div>
+									<div class='modal-body'>
+										<img src="wasp-ss.png" alt="Web Audio Signal Processor" class="full-width-img">
+										<h4>A visual programming environment for the Web Audio API</h4>
+										<p class='left-align'>Currently supports most of the built-in Audio Nodes and allows any signal connection supported by the Web Audio API. Priority one right now is to work out the best way to send control signals (a la Max/MSP), which would allow to send non-signal values between nodes, allowing for greater control and even logic. Once I have settled on a paradigm to send control signals, I will make it so that the simple nodes can be combined into more complex, custom nodes inside WASP itself. Once that is finished, the plan is to allow the user to 'compile' their audio chain down into a javascript function, which would allow developers to make a complex signal path in WASP, then use it in another project.</p>
+										<h4><a href='https://github.com/Tattomoosa/WASP'>GitHub Page</a></h4>
+										<h4><a href='wasp/webAudioEnvironment.html'>Live Demo</a></h4>
+										<p>(WASP is open source under the GPL license)</p>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<!-- DONE WITH WASP MODAL -->
+
+						</div>
+
+
+
+						<div class='col-sm-6'>
+								<div class='textbox textbox-link' data-toggle='modal' data-target='#fandd-modal'>
+									<h1 class='center'>FREQ+DESTROY</h1>
+									<img src="fandd-ss.png" alt="Train your ears" class="full-width-img">
+									<h4>Intuitive ear training</h4>
+								</div>
+						</div>
+						<!--THE MODAL IT OPENS FOR FREQ + DESTROY-->
+						<div class='modal fade' id='fandd-modal' role='dialog'>
+							<div class='modal-dialog'>
+								<!-- MODAL CONTENT -->
+								<div class='modal-content'>
+									<div class='modal-header'>
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h1 class='center'>FREQ + DESTROY</h1>
+									</div>
+									<div class='modal-body'>
+										<img src="fandd-ss.png" alt="Train your ears" class="full-width-img">
+										<h4>Intuitive, gameified ear training</h4>
+										<p class='left-align'>Ear training games are normally laid out like trivia. Hear a frequency (or musical pitch), click a button that corresponds. Many of them have very limited feedback which does nothing to reinforce or secure your knowledge. Freq + Destroy, however, presents you with the full spectrum and multiple levels of legitimately useful feedback to make it easier than ever to train your ears. Freq + Destroy is designed for use by Audio Engineers looking to learn frequencies by Hz, but plans are in motion for a musical version as well.</p>
+										<h4>No public build available - Check back later!</h4>
+										<p>(FREQ + DESTROY &copy; Matt O'Tousa. All rights reserved)</p>
+									</div>
+
+								</div>	
+							</div>
+						</div>
+						<!-- DONE WITH FANDD MODAL -->
+
+						<div class='col-sm-6'>
+								<div class='textbox textbox-link' data-toggle='modal' data-target='#loops-modal'>
+									<h1 class='center'>loops</h1>
+									<img src="loops-ss.png" alt="Record it then loop it up" class="full-width-img">
+									<h4>Simple looping for songwriters</h4>
+								</div>
+						</div>
+
+						<!--THE MODAL IT OPENS FOR LOOPS-->
+						<div class='modal fade' id='loops-modal' role='dialog'>
+							<div class='modal-dialog'>
+								<!-- MODAL CONTENT -->
+								<div class='modal-content'>
+									<div class='modal-header'>
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h1 class='center'>loops</h1>
+									</div>
+									<div class='modal-body'>
+										<img src="loops-ss.png" alt="Train your ears" class="full-width-img">
+										<h4>Simple looping app for songwriters</h4>
+										<p class='left-align'>Tap to record, tap to loop, tap to stop. Designed mainly for songwriters wanting to try out vocal ideas without having to worry about playing the instruments while they do it. Planned features include basic overdubbing, sync to metronome, and save functionality. But my aim with  Loops is not to do a lot of things, just a few basic features presented in an easy-to-use interface for musicians who don't want to read a whole manual for basic looping functionality.</p>
+										<h4>No public build available - check back later!</h4>
+										<p>(loops &copy; Matt O'Tousa. All rights reserved)</p>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<!-- DONE WITH LOOPS MODAL -->
+
+						<div class='col-sm-6'>
+								<div class='textbox textbox-link' data-toggle='modal' data-target='#sites-modal'>
+									<h1 class='center'>Websites</h1>
+									<img src="sites-ss.png" alt="Recursion is fun!" class="full-width-img">
+									<h4>Websites, by me</h4>
+								</div>
+						</div>
+
+
+						<!--THE MODAL IT OPENS FOR SITES-->
+						<div class='modal fade' id='sites-modal' role='dialog'>
+							<div class='modal-dialog'>
+								<!-- MODAL CONTENT -->
+								<div class='modal-content'>
+									<div class='modal-header'>
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h1 class='center'>Websites</h1>
+									</div>
+									<div class='modal-body'>
+										<h4>This one!</h4>
+										<img src="sites-ss.png" alt="Recursion!" class="full-width-img">
+										<p>Built with Bootstrap, a little bit of jQuery</p>
+										<a href='http://www.mattotousa.com'>Check it out</a>
+										<h4>O'Tousa Lab</h4>
+										<img src="otousa-lab.png" alt="My dad is a scientist" class="full-width-img">
+										<p>Built from scratch</p>
+										<a href='http://www3.nd.edu/~jotousa/labwww/'>Check it out</a>
+										<p class='left-align'></p>
+										<p>(Each site &copy; their owners, probably)</p>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<!-- DONE WITH SITES MODAL -->
+					</div>
+				</div>
+				<div class='spacer'></div>
+				<div class='row white-row'>
+					<a name='visual'></a>
+					<h1 class='subheading'>VISUAL</h1>
+				</div>
+				<div class='row inverted-row'>
+					<div class='row-container'>
+						<div class='col-md-4 col-sm-6'>
+							<a href='http://mattotousa.weebly.com/painting.html'>
+								<div class='textbox textbox-link'>
+									<h1 class='center'>Original</h1>
+									<img src="original-work.jpg" alt="My personal work" class="full-width-img">
+									<h4>Naked, melty figures, mostly</h4>
+									<p class='note'>(Under construction, links to my old site)</p>
+								</div>
+							</a>
+						</div>
+						<div class='col-md-4 col-sm-6'>
+							<a href='http://mattotousa.weebly.com/painting.html'>
+								<div class='textbox textbox-link'>
+									<h1 class='center'>Commission</h1>
+									<img src="commissionedwork.png" alt="Dog Portrait" class="full-width-img">
+									<h4>Pet portraiture, et cetera</h4>
+									<p class='note'>(Under construction, links to my old site)</p>
+								</div>
+							</a>
+						</div>
+						<div class='col-md-4 col-sm-6'>
+							<a href='http://mattotousa.weebly.com/design.html'>
+								<div class='textbox textbox-link'>
+									<h1 class='center'>Illustration/Design</h1>
+									<img src="design-work.jpg" alt="Dog Portrait" class="full-width-img">
+									<h4>With a more commercial bent</h4>
+									<p class='note'>(Under construction, links to my old site)</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class='spacer'></div>
+
+				<!-- AUDIO SECTION -->
+
+				<div class='row white-row'>
+					<a name='audio'></a>
+					<h1 class='subheading'>AUDIO</h1>
+				</div>
+				<div class='row inverted-row'>
+					<div class='row-container'>
+						<div class='col-md-12'>
+								<div class='textbox textbox-link'>
+									<h1 class='center'>Recordings</h1>
+									<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/210052784&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+									<h4>Produced and/or performed by me</h4>
+								</div>
+						</div>
+					</div>
+				</div>
+				<div class='spacer'></div>
+
+				<!-- AUDIO SECTION -->
+
+				<div class='row white-row'>
+					<a name='video'></a>
+					<h1 class='subheading'>VIDEO</h1>
+				</div>
+				<div class='row inverted-row'>
+					<div class='row-container'>
+						<div class='col-md-6'>
+								<div class='textbox textbox-link'>
+									<h1 class='center'>Time-Lapse Paintings</h1>
+									<iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?list=PLknbZFgH-SN93563QDJSrRgdB6EoMj0dC" frameborder="0" allowfullscreen></iframe>
+									<h4>Watch me paint</h4>
+								</div>
+						</div>
+						<div class='col-md-6'>
+								<div class='textbox textbox-link'>
+									<h1 class='center'>Other</h1>
+									<iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?list=PLknbZFgH-SN-YwvL43ePSwRJ-y9ZDu40a" frameborder="0" allowfullscreen></iframe>
+									<h4>Misc projects</h4>
+								</div>
+						</div>
+					</div>
+				</div>
+				<div class='spacer'></div>
+				<div class='row inverted-row-bottom'></div>
+				<div class='row white-row'>
+					<a name='about'></a>
+					<h1 class='center'>ABOUT ME</h1>
+				</div>
+				<div class='row white-row'>
+					<div class='col-md-6 center'>
+					<img src="me-and-dog.jpg" alt="Let's go exploring!" style="width:100%; max-width:360px;" class="img-borders">
+					</div>
+					<div class='col-md-6'>
+						<div style='padding:10px; text-align: left; width:80%; margin: auto;'>
+							<p>I was born and raised in South Bend, Indiana. I studied fine art and audio engineering at Ball State University but I probably owe most of my education to chronic insomnia and the internet.</p>
+
+							<p>I am compelled to create art by the separation between how we experience the world and how we understand it. I am obsessed with the physics of light and sound, but even more interested in the human perspective of it all. How our survival instinct has affected our interpretations. The ways our brains cheat to save processing power - reducing the vast amount of information our senses are constantly bringing in to a simpler, more symbolic representation of the world before that information even reaches our conscious mind.</p>
+
+							<p>It is interesting to me that every single stroke of a painting, every note in a song, every camera angle in a video, and even the aspect ratio of a work has symbolic significance because humans can't help but derive meaning from everything. There is an endless universe to explore, both in our exterior world and our interior one - our own human condition.</p>
+
+							<p>As a wise man once said, "It's a magical world, Hobbes, ol' buddy... Let's go exploring!"</p>
+						</div>
+					</div>
+				</div>
+				<div class='row white-row'>
+					<h1 class='center'>CONTACT</h1>
+					<h4 class='center'><a href='mailto:matt@mattotousa.com'>email: matt@mattotousa.com</a></h4>
+				</div>
+
+				<div class='row lightblue-row' style='height: 80px;'>
+					<div class='col-xs-2'></div>
+					<div class='col-xs-10'>
+						<div style='height:60px;'></div>
+						<p>&copy; Matt O'Tousa. All rights reserved</p>
+					</div>
+					<div class='col-xs-2'></div>
+				</div>
+
+				</div>
+			</div>
+		</div>
+		<!--</div>
+		</div>-->
+
+
+	<!-- FOOTER -->
+	<div class='footer'>
+		<div class='container'>
+			<div class='row'>
+				<div id='socialbar'>
+					<ul>
+						<li><a href='https://twitter.com/mlotousa' class="btn btn-lg btn-social-icon btn-twitter">
+							<span class="fa fa-twitter"></span>
+						</a></li>
+						<li><a href='https://www.instagram.com/mattopaints/' class="btn btn-lg btn-social-icon btn-instagram">
+							<span class="fa fa-instagram"></span>
+						</a></li>
+						<li><a href='http://www.facebook.com/mattotousa' class="btn btn-lg btn-social-icon btn-facebook">
+							<span class="fa fa-facebook"></span>
+						</a></li>
+						<li><a href='https://github.com/Tattomoosa'class="btn btn-lg btn-social-icon btn-github">
+							<span class="fa fa-github"></span>
+						</a></li>
+						<li><a href=https://soundcloud.com/tapedeckrobot' class="btn btn-lg btn-social-icon btn-soundcloud">
+							<span class="fa fa-soundcloud"></span>
+						</a></li>
+						<li><a href='https://www.youtube.com/channel/UCuUTv3O40RzriuN1gQ7ygbw' class="btn btn-lg btn-social-icon btn-youtube">
+							<span class="fa fa-youtube"></span>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

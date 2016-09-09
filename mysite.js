@@ -13,6 +13,8 @@ $( document ).ready(function() {
 		$( '#top-spacer' ).css('height', space + 'px');
 		console.log( $('#top-spacer').height() );
 		$( '#bottom-spacer' ).css('height', space + 'px');
+	} else {
+		$('#top-spacer').css('height', 47 + 'px');
 	};
 
 

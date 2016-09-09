@@ -26,20 +26,34 @@ body {
 	background: $nav-background;
 	//background-image: url('noise-overlay-blue.png');
 	overflow-x:hidden;
+	text-rendering:optimizeLegibility;
+
+	text-shadow: 1px 1px rgba(0,0,0,0.008);
+    text-rendering: optimizeLegibility;
+	webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.2);
 }
 
-.heightbrick {
-	height:105px;
-	@media screen and (max-width: 1280px) {
-		height:105px;
-  }
+#top-spacer {
+	height:0px;
+//	height:105px;
 
-  @media screen and (max-width: 680px) {
-		height:100px;
-  }
-  @media screen and (max-width: 500px) {
-		height:90px;
-  }
+//	@media screen and (max-width: 1280px) {
+//		height:105px;
+//  }
+
+//  @media screen and (max-width: 680px) {
+//		height:100px;
+// }
+//  @media screen and (max-width: 500px) {
+//		height:90px;
+//  }
+}
+
+#bottom-spacer {
+	height:0px;
+//	height:30px;
 }
 
 .right-align {
@@ -148,7 +162,6 @@ a:hover {text-decoration:none;}
 }
 
 .heading, .subheading {
-	margin-left:10px;
 	letter-spacing: 20px;
 	width: 100%;
 	background: $background-color;

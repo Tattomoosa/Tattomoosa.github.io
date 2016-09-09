@@ -5,19 +5,19 @@ body {
   font-family: Dosis;
   letter-spacing: 1px;
   background: #16062d;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.008);
+  text-rendering: optimizeLegibility;
+  webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); }
 
-.heightbrick {
-  height: 105px; }
-  @media screen and (max-width: 1280px) {
-    .heightbrick {
-      height: 105px; } }
-  @media screen and (max-width: 680px) {
-    .heightbrick {
-      height: 100px; } }
-  @media screen and (max-width: 500px) {
-    .heightbrick {
-      height: 90px; } }
+#top-spacer {
+  height: 0px; }
+
+#bottom-spacer {
+  height: 0px; }
 
 .right-align {
   text-align: right; }
@@ -109,7 +109,6 @@ a:hover {
   box-sizing: border-box; }
 
 .heading, .subheading {
-  margin-left: 10px;
   letter-spacing: 20px;
   width: 100%;
   background: #3d668f;

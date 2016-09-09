@@ -4,7 +4,21 @@ var interestDelay = 1600;
 var whichInterest = 4;
 
 $( document ).ready(function() {
+	//here we get window height and adjust front page padding...
+	var imgHeight = 360;
+	var toFill = $(window).height() - (98 + imgHeight + 68 + 120 + 80);
+	console.log (toFill);
+	if ( toFill > 1 ) {
+		var space = toFill/2;
+		$( '#top-spacer' ).css('height', space + 'px');
+		console.log( $('#top-spacer').height() );
+		$( '#bottom-spacer' ).css('height', space + 'px');
+	};
+
+
+	//randomly changes my interests at interestDelay interval, man
 	setTimeout(onTimeOut, interestDelay)
+
 	function onTimeOut()	{
 
 		//randomizes my interests
@@ -31,4 +45,5 @@ $( document ).ready(function() {
 		//}
 	setTimeout(onTimeOut, interestDelay);
 	}
+
 });

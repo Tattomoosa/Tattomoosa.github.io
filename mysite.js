@@ -14,7 +14,7 @@ $( document ).ready(function() {
 		console.log( $('#top-spacer').height() );
 		$( '#bottom-spacer' ).css('height', space + 'px');
 	} else {
-		$('#top-spacer').css('height', 47 + 'px');
+		$('#top-spacer').css('height', 100 + 'px');
 	};
 
 

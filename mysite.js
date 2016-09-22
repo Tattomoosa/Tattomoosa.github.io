@@ -39,8 +39,17 @@ $( document ).ready(function() {
 
 	function frontPagePadder() {
 		//here we get window height and adjust front page padding...
-		var imgHeight = 360;
-		var toFill = $(window).height() - (98 + imgHeight + 68 + 120 + 80);
+		var windowHeight = $(window).height();
+		var imgHeight = 360; //default
+		var mainPageHeight = 466; //main page height except for main-img
+
+		if (windowHeight < imgHeight + mainPageHeight) {
+			imgHeight = windowHeight - mainPageHeight;
+			if (imgHeight < 0) {
+				imgHeight = 40;
+			}
+		}
+		var toFill = windowHeight - (98 + imgHeight + 68 + 120 + 80);
 		console.log (toFill);
 		if ( toFill > 1 ) {
 			var space = toFill/8; //divide by 8 to do 5/8 on top, 3/8 on bottom
@@ -51,8 +60,9 @@ $( document ).ready(function() {
 			$('#top-spacer').css('height', 100 + 'px');
 		};
 
+		$( '#main-img' ).css('height', imgHeight + 'px')
 		//position main image inside div #main-img
-		$( '#main-img' ).css('background-position-y', -250 + 'px')
+		$( '#main-img' ).css('background-position-y', 40 + '%')
 
 		console.log ('made it!');
 	}

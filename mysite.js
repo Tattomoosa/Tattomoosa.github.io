@@ -7,6 +7,9 @@ $( document ).ready(function() {
 
 	//sizes up front page real nice
 	frontPagePadder();
+	$(window).on('resize', function(){
+		frontPagePadder();
+	});
 	//randomly changes my interests at interestDelay interval, man
 	setTimeout(onTimeOut, interestDelay)
 

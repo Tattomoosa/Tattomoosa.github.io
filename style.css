@@ -236,6 +236,9 @@ a:hover {
     .circles-row {
       width: 100%; } }
 
+.grey-text {
+  color: grey; }
+
 .textbox {
   background: white;
   width: 85%;

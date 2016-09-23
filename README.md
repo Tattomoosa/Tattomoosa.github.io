@@ -1,4 +1,6 @@
-#WASP
-##Web Audio Signal Processor
+#Personal Website
+##My Home on the Web
 
-Not a whole lot to show yet. This is a visual processing environment for the Web Audio API.
+Not too much more to say than that. Please check it out online [here](http://www.mattotousa.com)
+
+Thanks for visiting!

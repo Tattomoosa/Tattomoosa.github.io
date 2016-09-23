@@ -85,18 +85,26 @@ a:hover {
   margin: auto;
   margin-bottom: 20px;
   border: 4px solid lightblue; }
+  @media screen and (max-width: 500px) {
+    .circle {
+      width: 80px;
+      height: 80px; } }
   .circle h1, .circle a {
     color: black;
     font-size: 26px;
     padding-top: 10px;
     text-align: center; }
+    @media screen and (max-width: 500px) {
+      .circle h1, .circle a {
+        padding-top: 1px; } }
   .circle:hover {
     text-decoration: none;
     background: lightblue;
     border: 4px solid white;
     -webkit-box-shadow: 0px 0px 10px #16062d ;
     -moz-box-shadow: 0px 0px 10px #16062d ;
-    box-shadow: 0px 0px 10px #16062d ; }
+    box-shadow: 0px 0px 10px #16062d ;
+    cursor: pointer; }
 
 .content-holder {
   width: 85%;
@@ -141,6 +149,18 @@ a:hover {
   background: red;
   height: 100px; }
 
+#contact-social {
+  margin: 0;
+  padding: 0; }
+  #contact-social li {
+    display: inline-block; }
+    #contact-social li .fa {
+      font-size: 40px;
+      color: #3d668f; }
+    #contact-social li:hover .fa {
+      color: #16062d;
+      cursor: pointer; }
+
 #navbar, #socialbar {
   z-index: 1000;
   position: fixed;
@@ -151,8 +171,7 @@ a:hover {
   color: lightblue; }
   #navbar h1, #navbar li, #navbar ul, #socialbar h1, #socialbar li, #socialbar ul {
     display: inline-block;
-    margin: 0;
-    -webkit-transition: 2s; }
+    margin: 0; }
   #navbar span a, #socialbar span a {
     color: white;
     font-size: 33px;
@@ -204,6 +223,7 @@ a:hover {
 .textbox-link a:hover {
   text-decoration: none; }
 .textbox-link:hover {
+  cursor: pointer;
   text-decoration: none;
   border: 2px solid white;
   background: lightblue;

@@ -1,4 +1,4 @@
-var likedThings = ['art', 'music', 'dogs', 'space', 'nature', 'water', 'swimming', 'bass', 'ukulele', 'bikes', 'stars', 'painting',  'turtles', 'elephants', 'penguins', 'orangutans', 'books', 'mountains',  'computers', 'javascript', 'quantum physics', 'beer', 'steak', 'open-source', 'pianos', 'polyrhythms', 'DSP', 'hardcover books', 'painting', 'the moon', 'the stars', 'the clouds', 'the ocean', 'snowboarding', 'kangaroos', 'peaches', 'quesadillas',  'signal processing', 'machine learning', 'dreaming',  'puns', 'hiking', 'eating', 'pizza', 'science', 'grass', 'rain',  'sleeping', 'blue skies', 'whiskey', 'coral reefs', 'Earth', 'games', 'puzzles', 'fiction', 'sci-fi', 'fantasy', 'storms', 'programming', 'drawing', 'designing',  'recording',  'theremins', 'trains', 'neural networks', 'stories',  'painting',  'books', 'ravioli',  'porkchops', 'cheese',  'the beach', 'the universe', 'the milky way',  'parks'];
+var likedThings = ['art', 'music', 'dogs', 'space', 'nature', 'water', 'swimming', 'bass', 'ukulele', 'bikes', 'stars', 'painting',  'turtles', 'elephants', 'penguins', 'orangutans', 'books', 'mountains',  'computers', 'javascript', 'quantum physics', 'beer', 'steak', 'open-source', 'pianos', 'polyrhythms', 'DSP', 'painting', 'the moon', 'the stars', 'the clouds', 'the ocean', 'snow', 'dreaming',  'puns', 'hiking', 'eating', 'pizza', 'science', 'grass', 'rain',  'sleeping', 'blue skies', 'whiskey', 'coral reefs', 'Earth', 'games', 'puzzles', 'fiction', 'sci-fi', 'fantasy', 'storms', 'programming', 'drawing', 'designing',  'recording',  'theremins', 'trains', 'neural networks', 'stories',  'painting',  'books', 'ravioli',  'porkchops', 'cheese',  'the beach', 'the universe', 'the milky way',  'parks'];
 
 var interestDelay = 3200; //how long, in ms, before we change an interest
 var whichInterest = 4; //which interest we start on
@@ -116,7 +116,8 @@ $( document ).ready(function() {
 
 		$( '#main-img' ).css('height', imgHeight + 'px')
 		//position main image inside div #main-img
-		$( '#main-img' ).css('background-position-y', 40 + '%')
+		//$( '#main-img' ).css('background-position-y', 40 + '%')
+		$( '#main-img' ).css('background-position', '0% 40%');
 	}
 
 

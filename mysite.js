@@ -3,7 +3,12 @@ var likedThings = ['art', 'music', 'dogs', 'space', 'nature', 'water', 'swimming
 var interestDelay = 3200; //how long, in ms, before we change an interest
 var whichInterest = 4; //which interest we start on
 var onMobile = false; //on mobile we treat main img resize differently, and we hide nav/socialbar except on scroll up
+
+//scrolling vars
 var didScroll = false; //true if up-scroll occurred
+var lastScrollTop = 0; //top of page rn
+var scrollDelta = 5; //how far scroll needs to move to trigger that ish
+
 
 $( document ).ready(function() {
 
@@ -42,6 +47,18 @@ $( document ).ready(function() {
 	setTimeout(onTimeOut, interestDelay);
 	}
 
+	function showNav(value) {
+		if (value) {
+			//show nav
+			$('#navbar').css('top', 0 + 'px');
+			$('#socialbar').css('bottom', 0 + 'px');
+		} else {
+			//hide nav
+			$('#navbar').css('top', -100 + 'px');
+			$('#socialbar').css('bottom', -100 + 'px');
+		}
+	}
+
 	function frontPagePadder() {
 		//here we get window height and adjust front page padding...
 		var windowHeight = $(window).height();
@@ -51,22 +68,16 @@ $( document ).ready(function() {
 		var mainPageHeight = 466; //main page height except for main-img
 
 		//hides navbar + socialbar on mobile -- except on scroll up (not implemented yet!!)
-		if (windowWidth < 490) {
-
-			$('#navbar').css('transition', '2s');
-			$('#navbar').css('top', -100 + 'px');
-
-			$('#socialbar').css('transition', '2s');
-			$('#socialbar').css('bottom', -100 + 'px');
-
+		if (windowWidth < 767) {
+			showNav(false);
+			$('#navbar').css('transition', '1s');
+			$('#socialbar').css('transition', '1s');
 			onMobile = true;
 
 		} else {
+			showNav(true);
 			$('#navbar').css('transition', '0s');
-			$('#navbar').css('top', 0 + 'px');
 			$('#socialbar').css('transition', '0s');
-			$('#socialbar').css('bottom', 0 + 'px');
-
 			onMobile = false;
 		}
 		if (!onMobile) {
@@ -78,6 +89,8 @@ $( document ).ready(function() {
 				}
 			}
 
+			//handles dynamic sizing on desktop 
+			//is there a better spacing for mobile??
 			var toFill = windowHeight - (98 + imgHeight + 68 + 120 + 80);
 			console.log (toFill);
 			if ( toFill > 50 ) {
@@ -96,15 +109,46 @@ $( document ).ready(function() {
 			//mobile browsers (at least iOS chrome) resize to hide their own navigation bar so
 			//dynamic img size on mobile is bad
 			imgHeight = imgHeightMin;
+			//handles sizing on mobile -- could be better	
+			$('#top-spacer').css('height', 0 + 'px');
+			$('#bottom-spacer').css('height', 0 + 'px');
 		}
-
-
 
 		$( '#main-img' ).css('height', imgHeight + 'px')
 		//position main image inside div #main-img
 		$( '#main-img' ).css('background-position-y', 40 + '%')
+	}
 
-		console.log ('made it!');
+
+	//
+	// on scroll, let the interval function know the user has scrolled
+	$(window).scroll(function(event){
+		didScroll = true;
+	});
+	// run hasScrolled() and reset didScroll status
+	setInterval(function() {
+		if (didScroll) {
+			hasScrolled();
+			didScroll = false;
+		}
+	}, 250);
+
+	function hasScrolled() {
+		// do stuff here...
+		var pos = $(this).scrollTop();
+		if (onMobile) {
+			if (Math.abs(lastScrollTop - pos) <= scrollDelta) {return}
+			if (pos > lastScrollTop) {
+				//scrollin DOWN
+				showNav(false);
+				console.log ('scrollin down');
+			} else {
+				//scrollin UP
+				showNav(true);
+				console.log ('scrollin up');
+			}
+			lastScrollTop = pos;
+		}
 	}
 
 });

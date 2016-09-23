@@ -70,8 +70,8 @@ $( document ).ready(function() {
 		//hides navbar + socialbar on mobile -- except on scroll up (not implemented yet!!)
 		if (windowWidth < 767) {
 			showNav(false);
-			$('#navbar').css('transition', '1s');
-			$('#socialbar').css('transition', '1s');
+			$('#navbar').css('transition', '.2s');
+			$('#socialbar').css('transition', '.2s');
 			onMobile = true;
 
 		} else {
@@ -120,7 +120,10 @@ $( document ).ready(function() {
 	}
 
 
-	//
+	// on orientation change, reset our sizes...
+	$(window).on('orientationchange', function(event) {
+		frontPagePadder();
+	});
 	// on scroll, let the interval function know the user has scrolled
 	$(window).scroll(function(event){
 		didScroll = true;

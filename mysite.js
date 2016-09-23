@@ -95,7 +95,7 @@ $( document ).ready(function() {
 			//ON MOBILE
 			//mobile browsers (at least iOS chrome) resize to hide their own navigation bar so
 			//dynamic img size on mobile is bad
-			imgHeight = imgHeightMin*2;
+			imgHeight = imgHeightMin;
 		}
 
 

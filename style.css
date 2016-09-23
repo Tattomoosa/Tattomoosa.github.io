@@ -181,7 +181,7 @@ a:hover {
   left: 4%;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px; }
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 767px) {
     #navbar {
       left: 0px;
       width: 100%;
@@ -193,7 +193,7 @@ a:hover {
   right: 4%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px; }
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 767px) {
     #socialbar {
       right: 0;
       border-top-right-radius: 0px; } }
@@ -229,7 +229,7 @@ a:hover {
 .circles-row {
   width: 60%;
   margin: auto; }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 767px) {
     .circles-row {
       width: 95%; } }
   @media screen and (max-width: 500px) {

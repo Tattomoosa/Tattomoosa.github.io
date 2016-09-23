@@ -23,6 +23,8 @@ $bam-color: orange;
   transition: $args;
 }
 
+//makes the orientation flip act right, i hope
+html {-webkit-text-size-adjust: none;}
 
 html,
 body {
